@@ -5,7 +5,9 @@
 
 trigger:
 - '*'
-
+pool:
+  vmImage: 'ubuntu-latest'
+  
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
