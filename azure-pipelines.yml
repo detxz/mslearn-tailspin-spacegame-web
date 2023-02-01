@@ -2,14 +2,14 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'MyAgentPool' 
+  vmImage: 'ubuntu-20.04' 
   demands:
   - npm
   
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '7.0.102'
+  dotnetSdkVersion: '6.0.102'
 
 steps:
 - task: UseDotNet@2
