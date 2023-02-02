@@ -2,8 +2,9 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'MyLinuxAgent' 
+  name: 'MyLinuxAgent' 
   demands:
+  - agent.name -equals MyLinuxAgent
   - npm
   
 variables:
