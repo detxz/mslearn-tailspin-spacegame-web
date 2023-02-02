@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  name: 'MyLinuxAgent' 
+  name: 'MyAgentPool' 
   demands:
   - agent.name -equals MyLinuxAgent
   - npm
@@ -65,4 +65,4 @@ steps:
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
    
-    
+     
